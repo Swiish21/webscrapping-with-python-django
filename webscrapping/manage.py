@@ -3,7 +3,11 @@
 import os
 import sys
 
+"""
 
+This is the `main` function in a Django project's `manage.py` file. It sets the `DJANGO_SETTINGS_MODULE` environment variable to point to the project's settings file (`webscrapping.settings`) and then attempts to import and run Django's management commands from the command line. If Django is not installed or not found, it raises an `ImportError` with a helpful error message.
+
+"""
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webscrapping.settings')
