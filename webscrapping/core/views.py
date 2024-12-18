@@ -16,6 +16,12 @@ def get_content(product):
 
 
 def home(request):
+    """
+    The home view renders a form for the user to input a product to search for.
+    When the form is submitted, it scrapes the product information from Jumia
+    and renders it in a table.
+    """
+    
     product_info_list = []
 
     if 'product' in request.GET:
